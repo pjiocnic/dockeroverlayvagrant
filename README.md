@@ -3,15 +3,15 @@ This is a vagrant and chef repo that will create a master etcd server
 with the latest docker installed, and then create n+1 minion docker servers
 preconfigured to use the etcd master and running in etcd proxy mode.
 
-<h2> Usage </h2>
-The first step is to edit the vagrantfile to determine the number of minions desired,
-and whether you want the virtualbox provider to open a console window for each server.
-The defaults are one minion, and true on the console display.
+Usage:  
+The first step is to edit the vagrantfile to determine the number of minions desired,  
+and whether you want the virtualbox provider to open a console window for each server.   
+The defaults are one minion, and true on the console display.   
 ```
 MINION_COUNT = 1
 GUI = true
-```
-Then issue a ```vagrant up```, and go get a cold drink...
+```  
+Then issue a ```vagrant up```, and go get a cold drink...   
 
 <h2> Initial Verification </h2>
 To test that etcd is functioning on the hosts, ssh to any one of them (or use the
